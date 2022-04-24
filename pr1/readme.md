@@ -1,6 +1,6 @@
-#RECONOCIMIENTO FACIAL
+RECONOCIMIENTO FACIAL
 
-En este documento estan las instrucciones a detalle de la ejecucion e instalacion de librerias necesarias para el buen funcionameinto se aclaran algunos errores y dudas que podrian surgircualquier duda pueden contactarme por mi correo:
+En este documento estan las instrucciones a detalle de la ejecucion e instalacion de librerias necesarias para el buen funcionameinto, a si  se aclaran algunos errores y dudas que podrian surgircualquier duda pueden contactarme por mi correo:
 
 juannavarrete3@hotmail.com 
 
