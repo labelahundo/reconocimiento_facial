@@ -8,30 +8,30 @@ con la descripcion de "dudas vision artificial"
 
 ANTES DE EMPEZAR CON EL RECONOCIMIENTO DEBE INSTALAR TOSDAS LAS LIBRERIAS Y
 DEPENDENCIAS NECESARIAS PARA ESO PRESIONE "WINDOWS + R" Y ESCRIBA "cmd"
-EN ESE MON¿MENTO APARECERA UNA VENTANA DE ESCRITURA VACIA,
+EN ESE MOMENTO APARECERA UNA VENTANA DE ESCRITURA VACIA,
 LO QUE DEBE HACER ES COPIAR Y PEGAR LOS SIGUENTES PARRAFOS DANDO A ENTER
 DESPUES DE PEGAR CADA UNO DE ELLOS:
 
-pip install opencv-python
-pip install mutils
-pip install os-sys
-		***ES NORMAL QUE SALTE UN ERROR AL INSTALAR "os-sys"***
-pip install numpy
-pip install opencv-contrib-python
+pip install opencv-python  
+pip install mutils  
+pip install os-sys  
+		***ES NORMAL QUE SALTE UN ERROR AL INSTALAR "os-sys"***  
+pip install numpy  
+pip install opencv-contrib-python  
 
 Adicionalmente necesitaras decargar un achivo .xml de
 opencv, lo encontraras dentro de su repositorio en 
-github [link](https://github.com/opencv/opencv/tree/master/data/haarcascades) deberas buscar en la lista elarchivo von el nombre "haarcascade_frontalface_defaul.xml" descargarlo y ponerlo dentro de la carpeta de el proyecto
+github [link DEL REPOSITORIO](https://github.com/opencv/opencv/tree/master/data/haarcascades) deberas buscar en la lista el archivo con el nombre "haarcascade_frontalface_defaul.xml" descargarlo y ponerlo dentro de la carpeta de el proyecto "pr1"
 
 *********************************
 
-el primer paso a ejecutar es abrir el archivo llamado "captura_rostros"
+El primer paso a ejecutar es abrir el archivo llamado "captura_rostros"
 al ejecutar el programa le pedira 2 parametros.
 
-1 -- sera el nombre de la perzona de la cual tomara las
+1 -- Sera el nombre de la perzona de la cual tomara las
 imagenes para el entreanamiento.
 
-2 -- sera el numero de la primer imagen. Si la carpeta con el nombre de
+2 -- Sera el numero de la primer imagen. Si la carpeta con el nombre de
 la persona esta vacia el numero de la imagen debera ser 0, si necesita
 tomar mas imagenes para reforzar el entrenamiento debera poner 
 el numero de la ultima imagen de la carpeta y sumarle 1, mas adelante
@@ -72,7 +72,7 @@ elimine las imagenes inutites.
 
 
 
-PODRIA REVISAR LA CAPTURA DE PANTALLA ADJUNTA EN LA CARPETA "pr 1"
+PODRIA REVISAR LA CAPTURA DE PANTALLA ADJUNTA EN LA CARPETA "pr1"
 **********************************
 
 Para el segundo paso daremos inicio al entrenamiento de la red neuronal,
@@ -84,8 +84,7 @@ que tarde en entrenar varia dependiendo de la cantidad de imagenes y
 la potencoia de su computador, no se preocupe ya que tomara tiempo.
 
 Al finalizar el entrenamiento devera aparecer un nuevo archivo en la carpeta
-"pr 1" llamado "cara.xml", ese archivo podria decirse que es su modelo 
-entrenado de reconocimiento facial.
+"pr1" llamado "cara.xml", ese archivo podria decirse que es su modelo entrenado de reconocimiento facial.
 
 ************************************
 Ahora estamos en la ultima fase.
@@ -104,18 +103,20 @@ lo que puede hacer es mover un poco los parametros de reconocimiento que estan d
 EN ESPECIFICO ESTA PARTE ::
 
 
-clasificador = detect.detectMultiScale(gris,
-                    scaleFactor = 1.1,
-                    minNeighbors = 5, 
-                    minSize = (95,95),
-                    maxSize = (400,400))
+clasificador = detect.detectMultiScale(gris,  
+		scaleFactor = 1.1,  
+		minNeighbors = 5,   
+		minSize = (95,95),  
+		maxSize = (400,400))  
 
 DENTRO DE LOS PARENTESIS HAY 5 PARAMETROS:
-1 - gris
-2 - scaleFactor
-3 - minNeighbors
-4 - minSize
-5 - maxSize
+
+  
+1 - gris  
+2 - scaleFactor  
+3 - minNeighbors  
+4 - minSize  
+5 - maxSize  
 
 Cada factor afecta el resultado final:
 
@@ -144,7 +145,7 @@ minNeigbors:
 Es la cantidad minima de detecciones para considerar un recuadro como cara.
 Si baja mucho el numero habra falsos positivos y si aumenta el numero es probable
 que no pueda reconocer su rostro.
-Intente encontrar un punto donde lo reconozca y no haya tanbtos falsos pocitivos.
+Intente encontrar un punto donde lo reconozca y no haya tanbtos falsos positivos.
 
 
 maxSize y minSize: 
@@ -158,6 +159,7 @@ no se preocupe si baja el numero para que pueda reconocer su rostro y al mismo t
 tiene falsos positivos, puede modificar todos estos para metros para solucionar ese problema
 puede verlos como perillas en un mezclador de sonido, solo mueva todas un poco hasta que
 tenga el resut+ltado deseado con prueva y error
+
 
 
 
