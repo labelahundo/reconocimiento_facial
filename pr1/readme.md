@@ -155,10 +155,14 @@ puede aumentar el njumero de minSize de (95,95) a (100,100), y si eso no funcion
 trate de aumentarlo un poco mas, si deja de detectar su rostro o la deteccion 
 comienza a parpadear baje el numero.
 
-no se preocupe si baja el numero para que pueda reconocer su rostro y al mismo tiempo 
+No se preocupe si baja el numero para que pueda reconocer su rostro y al mismo tiempo 
 tiene falsos positivos, puede modificar todos estos para metros para solucionar ese problema
 puede verlos como perillas en un mezclador de sonido, solo mueva todas un poco hasta que
 tenga el resut+ltado deseado con prueva y error
+
+Un ultimo es si despues de cambiar los parametros no funciona podria usar de nuevo el archivo de
+captura_rostros para tomar mas imagenes de su rostro, preferiblemente en el lugar en donde este probando el modelo entrenado, lo unico que debe hacer es en lugar de poner el numero 0 en el numero de imagen que le pide debera poner el numero de la ultima imagen y sumarle uno.
+Por ejemplo si tinene 500 imagenes de su rostro en la carpeta, dentro del parametro debera poner el numero 501 y siepre debe poner el mismo nombre de la carpeta que se desea llenar con nuevas imagenes para reforzar el entrenamiento. 
 
 
 
